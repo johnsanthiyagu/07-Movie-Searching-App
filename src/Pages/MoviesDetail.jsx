@@ -9,7 +9,7 @@ const MoviesDetail = () => {
   console.log(movie);
   useEffect(() => {
     axios
-      .get(`http://www.omdbapi.com/?apikey=731528e&i=${id}`)
+      .get(`https://www.omdbapi.com/?apikey=731528e&i=${id}`)
       .then((res) => setMovie(res.data))
       .catch((error) => console.error("fetching Error", error));
   }, []);
