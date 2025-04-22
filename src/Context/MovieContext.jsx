@@ -5,7 +5,7 @@ export const MovieContext = createContext();
 
 export const MovieProvider = ({ children }) => {
   const API_KEY = "731528e";
-  const BASE_URL = "http://www.omdbapi.com/";
+  const BASE_URL = "https://www.omdbapi.com/";
 
   const [movies, setMovies] = useState([]);
   const [movieName, setMovieName] = useState("");
